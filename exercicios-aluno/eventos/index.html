@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festa Americana</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🎉 Festa Americana</h1>
+
+    <!-- Formulário -->
+    <section class="adicao-de-itens container">
+      <label for="novo-item">Item</label>
+      <input 
+        type="text" 
+        id="novo-item" 
+        name="item" 
+        placeholder="Digite um item (ex: Salgadinhos)">
+
+      <label for="nome-pessoa">Pessoa</label>
+      <input 
+        type="text" 
+        id="nome-pessoa" 
+        name="pessoa" 
+        placeholder="Digite o nome da pessoa (ou deixe vazio)">
+
+      <button id="btn-adicionar">Adicionar Item</button>
+    </section>
+
+    <!-- Listas lado a lado -->
+    <section class="listas-grid container">
+      <!-- Confirmados -->
+      <div class="lista-bloco">
+        <h2>✅ Confirmados</h2>
+        <p id="contador-confirmados">0 itens confirmados</p>
+        <div id="lista-confirmados" class="lista itens"></div>
+        <div id="mensagem-confirmados" class="mensagem-vazia">
+          Ninguém confirmou nada ainda.
+        </div>
+      </div>
+
+      <!-- Disponíveis -->
+      <div class="lista-bloco">
+        <h2>📝 Disponíveis</h2>
+        <p id="contador-disponiveis">0 itens disponíveis</p>
+        <div id="lista-disponiveis" class="lista itens"></div>
+        <div id="mensagem-disponiveis" class="mensagem-vazia">
+          Adicione itens para aparecerem aqui.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
